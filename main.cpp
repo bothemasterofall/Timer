@@ -4,6 +4,15 @@
 int main()
 {
     Timer timer;
+
+    printf("Testing get times for when timer has no points\n");
+    printf("getClocks: %u\n", timer.getClocks());
+    printf("getClocks overload: %u\n", timer.getClocks(0, -3));
+    printf("getSeconds: %lf\n", timer.getSeconds());
+    printf("getSeconds overload: %lf\n", timer.getSeconds(0, -3));
+
+    printf("Beginning main operations\n");
+
     timer.setPoint();
 
     for (int i = 0; i < 10000; i++)

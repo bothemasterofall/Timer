@@ -9,10 +9,10 @@ class Timer
         Timer();
 
         unsigned int getClocks();
-        unsigned int getClocks(int first, int second);
+        unsigned int getClocks(unsigned int first, unsigned int second);
 
         double getSeconds();
-        double getSeconds(int first, int second);
+        double getSeconds(unsigned int first, unsigned int second);
 
         void setPoint();
 

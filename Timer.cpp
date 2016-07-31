@@ -11,33 +11,30 @@ unsigned int Timer::getClocks()
     return getClocks(0, intervals.size() - 1);
 }
 
-unsigned int Timer::getClocks(int first, int second)
+unsigned int Timer::getClocks(unsigned int first, unsigned int second)
 {
-    if (first <= second && first >= 0 && second < intervals.size())
+    if (intervals.size() > 0 
+        && first >= 0 && second >= 0
+        && first < intervals.size() && second < intervals.size()
+        && first <= second)
     {
         return intervals[second] - intervals[first];
+    }
+    else
+    {
+        return 0;
     }
 }
 
 double Timer::getSeconds()
 {
-    double clocks = getClocks();
-    if (clocks != -1)
-    {
-        clocks /= CLOCKS_PER_SEC;
-    }
-
-    return clocks;
+    return getSeconds(0, intervals.size() - 1);
 }
 
-double Timer::getSeconds(int first, int second)
+double Timer::getSeconds(unsigned int first, unsigned int second)
 {
     double clocks = getClocks(first, second);
-    if (clocks != -1)
-    {
-        clocks /= CLOCKS_PER_SEC;
-    }
-
+    clocks /= CLOCKS_PER_SEC;
     return clocks;
 }
 
