@@ -20,10 +20,10 @@ int main()
 
     timer.setPoint();
 
-    printf("Total time in clocks: %lf\n", timer.getClocks());
+    printf("Total time in clocks: %u\n", timer.getClocks());
     printf("Total time in seconds: %lf\n", timer.getSeconds());
 
-    printf("Time between first two points in clocks: %lf\n",
+    printf("Time between first two points in clocks: %u\n",
         timer.getClocks(0, 1));
     printf("Time between first two points in seconds: %lf\n",
         timer.getSeconds(0, 1));

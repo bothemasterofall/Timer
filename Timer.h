@@ -8,8 +8,8 @@ class Timer
     public:
         Timer();
 
-        double getClocks();
-        double getClocks(int first, int second);
+        unsigned int getClocks();
+        unsigned int getClocks(int first, int second);
 
         double getSeconds();
         double getSeconds(int first, int second);

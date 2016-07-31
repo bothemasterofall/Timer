@@ -6,12 +6,12 @@ Timer::Timer()
 {
 }
 
-double Timer::getClocks()
+unsigned int Timer::getClocks()
 {
     return getClocks(0, intervals.size() - 1);
 }
 
-double Timer::getClocks(int first, int second)
+unsigned int Timer::getClocks(int first, int second)
 {
     if (first <= second && first >= 0 && second < intervals.size())
     {
