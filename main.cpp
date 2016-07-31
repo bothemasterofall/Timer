@@ -28,5 +28,10 @@ int main()
     printf("Time between first two points in seconds: %lf\n",
         timer.getSeconds(0, 1));
 
+    printf("Time between second two points in clocks: %u\n",
+        timer.getClocks(1, 2));
+    printf("Time between second two points in seconds: %lf\n",
+        timer.getSeconds(1, 2));
+
     return 0;
 }
