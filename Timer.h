@@ -22,13 +22,16 @@ class Timer
     public:
         Timer();
 
-        unsigned int getClocks();
-        unsigned int getClocks(unsigned int first, unsigned int second);
+        unsigned int getClocks() const;
+        unsigned int getClocks(unsigned int first, unsigned int second) const;
 
-        double getSeconds();
-        double getSeconds(unsigned int first, unsigned int second);
+        double getSeconds() const;
+        double getSeconds(unsigned int first, unsigned int second) const;
 
         void setPoint();
+        size_t getNumPoints() const;
+
+        void clear();
 
     private:
         std::vector<clock_t> intervals;

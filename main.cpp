@@ -42,5 +42,7 @@ int main()
     printf("Time between second two points in seconds: %lf\n",
         timer.getSeconds(1, 2));
 
+    printf("Total points created: %u\n", timer.getNumPoints());
+
     return 0;
 }
