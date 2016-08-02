@@ -15,7 +15,8 @@
  *
  * All methods return 0 if unsuccessful. This will happen if no points are set
  * or if out of range intervals are specified. This will also happen if the
- * first interval is greater than the second interval.
+ * first specified time point is greater than the second in the overloaded
+ * getClocks and getSeconds methods.
 *******************************************************************************/
 class Timer
 {
