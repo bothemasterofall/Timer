@@ -1,3 +1,8 @@
+/*******************************************************************************
+* Test program for Timer class. Just verify output manually. Eyeball it, as it
+* seems to change on a per run basis, which isn't unexpected.
+*******************************************************************************/
+
 #include "Timer.h"
 #include <cstdio>
 
